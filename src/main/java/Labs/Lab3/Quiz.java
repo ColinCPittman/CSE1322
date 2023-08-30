@@ -13,5 +13,6 @@ public class Quiz {
         String answer = scanner.nextLine();
         System.out.println("How difficult (1-3)?");
         int difficulty = scanner.nextInt();
+        scanner.hasNext();
     }
 }
