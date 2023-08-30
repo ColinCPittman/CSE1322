@@ -9,6 +9,7 @@ public class Question {
         this.difficulty = difficulty;
         this.answer = answer;
     }
+
     public String getQuestion() {
         return question;
     }
