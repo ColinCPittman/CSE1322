@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="classes outlined">
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="initial completion of code, yet to be tested">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693423219418</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="initial completion of code, yet to be tested">
+      <created>1693585329855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693585329855</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creation" />
     <MESSAGE value="classes outlined" />
-    <option name="LAST_COMMIT_MESSAGE" value="classes outlined" />
+    <MESSAGE value="initial completion of code, yet to be tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial completion of code, yet to be tested" />
   </component>
 </project>
