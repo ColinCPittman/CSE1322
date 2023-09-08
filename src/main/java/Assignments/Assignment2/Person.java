@@ -16,6 +16,6 @@ public class Person {
         ticketNumber = nextTicketNumber++;
     }
     public String toString() {
-        return ticketNumber + "\t" + name + "\n";
+        return ticketNumber + "\t" + name;
     }
 }

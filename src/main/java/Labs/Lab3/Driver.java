@@ -58,7 +58,9 @@ public class Driver {
 
         return userInput;
     }
-
+    private static boolean isValidInput(int input, int lowValue, int highValue, int exitValue) {
+        return (input >= lowValue && input <= highValue) || input == exitValue;
+    }
     static String mainMenu = """
                         
             What would you like to do?
@@ -69,9 +71,7 @@ public class Driver {
             5. Quit""";
     static Scanner scanner = new Scanner(System.in);
 
-    private static boolean isValidInput(int input, int lowValue, int highValue, int exitValue) {
-        return (input >= lowValue && input <= highValue) || input == exitValue;
-    }
+
 
     static final int add_question = 1;
     static final int remove_question = 2;
