@@ -11,115 +11,124 @@ public class Driver {
             System.out.println(mainMenu);
             choice = promptUserForMenuChoice(fromOne, toNine, exit_value, "Choice: ");
             switch (choice) {
-                case add_bus -> {
-                    Bus newBus = new Bus();
-                    System.out.println("Bus " + newBus + " was added to position " + dispatch.addBus(newBus));
-                }
-                case add_person_to_bus -> {
-                    int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
-                    if (busIDChoice == user_cancelled) break;
-                    Bus foundBus = dispatch.findBus(busIDChoice);
-                    if (foundBus == null) {
-                        System.out.println("No bush with ID " + busIDChoice);
-                    } else {
-                        String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
-                        if ("-1".equals(nameChoice)) break;
-                        Person newPerson = new Person(nameChoice);
-                        foundBus.addPerson(newPerson);
-                        System.out.println(newPerson.getName() + " has been added to bus " + foundBus);
-                    }
-                }
-                case remove_bus -> {
-                    int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
-                    if (busIDChoice == user_cancelled) break;
-                    if (dispatch.findBus(busIDChoice) == null) {
-                        System.out.println("No bus with ID " + busIDChoice);
-                    }
-                    else System.out.println("Bus " + dispatch.removeBus(busIDChoice).getID() + " removed.");
-                }
-                case remove_person -> {
-                    int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]: ");
-                    if (busIDChoice == user_cancelled) break;
-                    if (dispatch.findBus(busIDChoice) == null) {
-                        System.out.println("No bus with ID " + busIDChoice);
-                    }
-                    else {
-                        String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
-                        if ("-1".equals(nameChoice)) break;
-                        Person foundPerson = dispatch.findBus(busIDChoice).findPerson(nameChoice);
-                        if(foundPerson == null) {
-                            System.out.println("No such person found in bus " + busIDChoice);
-                        }
-                        else {
-                            dispatch.findBus(busIDChoice).removePerson(foundPerson);
-                            System.out.println(nameChoice + " has been removed from bus " + busIDChoice);
-                        }
-                    }
-                }
-                case list_passengers -> {
-                    int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]: ");
-                    if(busIDChoice == user_cancelled) break;
-                    Bus foundBus = dispatch.findBus(busIDChoice);
-                    if (foundBus == null) {
-                        System.out.println("No bush with ID " + busIDChoice);
-                    } else System.out.println("BUS [ID] \n" + foundBus.toString());
-                }
-                case list_buses -> System.out.println("BUS QUEUE " + dispatch.toString());
-                case requeue_bus -> {
-                    int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
-                    if(busIDChoice == user_cancelled) break;
-                    Bus foundBus = dispatch.findBus(busIDChoice);
-                    if (foundBus == null) {
-                        System.out.println("No bush with ID " + busIDChoice);
-                    }
-                    else {
-                        int newPosition = promptUserForNonNegative("Enter new bus position[type 'cancel' to return to main menu]:");
-                        if(newPosition == user_cancelled) break;
-                        System.out.println("Bus " + busIDChoice + " added to position " + dispatch.addBus(foundBus, newPosition));
-                    }
-                }
-                case transfer_person -> {
-                    String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
-                    if("-1".equals(nameChoice)) break;
-                    int initialBusIDChoice = promptUserForNonNegative("Please enter the ID of the initial bus[type 'cancel' to return to main menu]:");
-                    if (initialBusIDChoice == user_cancelled) break;
-                    int transferBusIDChoice = promptUserForNonNegative("Please enter the ID of the transfer bus[type 'cancel' to return to main menu:");
-                    if (transferBusIDChoice == user_cancelled) break;
-                    Bus foundInitialBus = dispatch.findBus(initialBusIDChoice);
-                    Bus foundTransferBus = dispatch.findBus(transferBusIDChoice);
-                    if(foundInitialBus == null) System.out.println("No bus with ID " + initialBusIDChoice);
-                    if(foundTransferBus == null) System.out.println("Not bus with ID " + transferBusIDChoice);
-                    if(foundInitialBus != null) {
-                        Person foundPerson = foundInitialBus.findPerson(nameChoice);
-                        if(foundPerson == null) {
-                            System.out.println("No person named " + nameChoice + " on bus " + initialBusIDChoice);
-                        }
-                        if(!(foundTransferBus == null || foundPerson == null)) { //foundInitialBus will be checked for null in method transferPerson()
-                           if(foundInitialBus.transferPerson(foundInitialBus,foundTransferBus,foundPerson)) {
-                               System.out.println("Person transferred successfully.");
-                           }
-                           else System.out.println("Person transfer failed.");
-                        }
-                        else {
-                        }
-                    }
-                }
-                case dispatch_bus -> {
-                    Bus dispatchedBus = dispatch.dispatchBus();
-                    if(dispatchedBus == null) {
-                        System.out.println("Bus queue is empty.");
-                    }
-                    else System.out.println(dispatchedBus + " has been dispatched");
-                }
+                case add_bus -> handleCaseAddBus(dispatch);
+                case add_person_to_bus -> handleCaseAddPerson(dispatch);
+                case remove_bus -> handleCaseRemoveBus(dispatch);
+                case remove_person -> handleCaseRemovePerson(dispatch);
+                case list_passengers -> handleCaesListPassengers(dispatch);
+                case list_buses -> System.out.println("BUS QUEUE " + dispatch);
+                case requeue_bus -> handleCaseRequeueBus(dispatch);
+                case transfer_person -> handleCaseTransferPerson(dispatch);
+                case dispatch_bus -> handleCaseDispatchBus(dispatch);
                 case exit_value -> System.out.println("Shutting down...");
             }
         } while (choice != exit_value);
     }
 
+    private static void handleCaseAddBus(Dispatcher dispatch) {
+        Bus newBus = new Bus();
+        System.out.println("Bus " + newBus + " was added to position " + dispatch.addBus(newBus));
+    }
+
+    private static void handleCaseRemoveBus(Dispatcher dispatch) {
+        int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
+        if (busIDChoice == user_cancelled) return;
+        if (dispatch.findBus(busIDChoice) == null) {
+            System.out.println("No bus with ID " + busIDChoice);
+        } else System.out.println("Bus " + dispatch.removeBus(busIDChoice).getID() + " removed.");
+    }
+
+    private static void handleCaseAddPerson(Dispatcher dispatch) {
+        int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
+        if (busIDChoice == user_cancelled) return;
+        Bus foundBus = dispatch.findBus(busIDChoice);
+        if (foundBus == null) {
+            System.out.println("No bush with ID " + busIDChoice);
+        } else {
+            String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
+            if ("-1".equals(nameChoice)) return;
+            Person newPerson = new Person(nameChoice);
+            foundBus.addPerson(newPerson);
+            System.out.println(newPerson.getName() + " has been added to bus " + foundBus);
+        }
+    }
+
+    private static void handleCaseDispatchBus(Dispatcher dispatch) {
+        Bus dispatchedBus = dispatch.dispatchBus();
+        if (dispatchedBus == null) {
+            System.out.println("Bus queue is empty.");
+        } else System.out.println(dispatchedBus + " has been dispatched");
+    }
+
+    private static void handleCaseRequeueBus(Dispatcher dispatch) {
+        int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]:");
+        if (busIDChoice == user_cancelled) return;
+        Bus foundBus = dispatch.findBus(busIDChoice);
+        if (foundBus == null) {
+            System.out.println("No bush with ID " + busIDChoice);
+        } else {
+            int newPosition = promptUserForNonNegative("Enter new bus position[type 'cancel' to return to main menu]:");
+            if (newPosition == user_cancelled) return;
+            System.out.println("Bus " + busIDChoice + " added to position " + dispatch.addBus(foundBus, newPosition));
+        }
+    }
+
+    private static void handleCaesListPassengers(Dispatcher dispatch) {
+        int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]: ");
+        if (busIDChoice == user_cancelled) return;
+        Bus foundBus = dispatch.findBus(busIDChoice);
+        if (foundBus == null) {
+            System.out.println("No bush with ID " + busIDChoice);
+        } else System.out.println("BUS [ID] \n" + foundBus.toString());
+    }
+
+    private static void handleCaseRemovePerson(Dispatcher dispatch) {
+        int busIDChoice = promptUserForNonNegative("Enter bus ID [type 'cancel' to exit]: ");
+        if (busIDChoice == user_cancelled) return;
+        if (dispatch.findBus(busIDChoice) == null) {
+            System.out.println("No bus with ID " + busIDChoice);
+        } else {
+            String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
+            if ("-1".equals(nameChoice)) return;
+            Person foundPerson = dispatch.findBus(busIDChoice).findPerson(nameChoice);
+            if (foundPerson == null) {
+                System.out.println("No such person found in bus " + busIDChoice);
+            } else {
+                dispatch.findBus(busIDChoice).removePerson(foundPerson);
+                System.out.println(nameChoice + " has been removed from bus " + busIDChoice);
+            }
+        }
+    }
+
+    private static void handleCaseTransferPerson(Dispatcher dispatch) {
+        String nameChoice = promptUserForString("Please enter person's name [type '-1' to cancel]:");
+        if ("-1".equals(nameChoice)) return;
+        int initialBusIDChoice = promptUserForNonNegative("Please enter the ID of the initial bus[type 'cancel' to return to main menu]:");
+        if (initialBusIDChoice == user_cancelled) return;
+        int transferBusIDChoice = promptUserForNonNegative("Please enter the ID of the transfer bus[type 'cancel' to return to main menu:");
+        if (transferBusIDChoice == user_cancelled) return;
+        Bus foundInitialBus = dispatch.findBus(initialBusIDChoice);
+        Bus foundTransferBus = dispatch.findBus(transferBusIDChoice);
+        if (foundInitialBus == null) System.out.println("No bus with ID " + initialBusIDChoice);
+        if (foundTransferBus == null) System.out.println("No bus with ID " + transferBusIDChoice);
+        if (foundInitialBus != null) {
+            Person foundPerson = foundInitialBus.findPerson(nameChoice);
+            if (foundPerson == null) {
+                System.out.println("No person named " + nameChoice + " on bus " + initialBusIDChoice);
+            }
+            if (!(foundTransferBus == null || foundPerson == null)) { //foundInitialBus will be checked for null in method transferPerson()
+                if (foundInitialBus.transferPerson(foundInitialBus, foundTransferBus, foundPerson)) {
+                    System.out.println("Person transferred successfully.");
+                } else System.out.println("Person transfer failed.");
+            } else {
+            }
+        }
+    }
+
     public static String promptUserForString(String prompt) {
         String output;
         int value;
-        while(true) {
+        while (true) {
             System.out.print(prompt);
             output = scanner.nextLine();
             try {
@@ -199,7 +208,7 @@ public class Driver {
                     continue;
                 }
                 break;
-            } catch (InputMismatchException err) {
+            } catch (NumberFormatException err) {
                 if ("cancel".equalsIgnoreCase(input)) {
                     return -1;
                 }
