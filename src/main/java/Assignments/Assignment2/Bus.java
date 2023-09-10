@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Bus {
     ArrayList<Person> passengers;
-    private static int nextID = 1;
+    private static int nextID = 0;
     private int busID;
     public Bus(){
         passengers = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Bus {
     }
     public static boolean transferPerson(Bus initialBus, Bus transferBus, Person person) {
         for (int i = 0; i < initialBus.passengers.size(); i++) {
-            if(person.getName() == initialBus.passengers.get(i).getName()) {
+            if(person.getName().equalsIgnoreCase(initialBus.passengers.get(i).getName())) {
                 initialBus.passengers.remove(i);
                 transferBus.addPerson(person);
                 return true;

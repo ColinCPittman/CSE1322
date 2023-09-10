@@ -3,7 +3,7 @@ package Assignments.Assignment2;
 import java.util.ArrayList;
 
 public class Dispatcher {
-    public ArrayList<Bus> busQueue = new ArrayList<>();
+    private ArrayList<Bus> busQueue = new ArrayList<>();
     public int addBus(Bus bus) {
         busQueue.add(bus);
         return busQueue.size() - 1;

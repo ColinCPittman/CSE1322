@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 2 start">
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 2 finished coding, quick and dirty. untested">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Bus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Dispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment2/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab3/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694200529691</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="assignment 2 finished coding, quick and dirty. untested">
+      <created>1694209918146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694209918146</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +170,7 @@
     <MESSAGE value="classes outlined" />
     <MESSAGE value="initial completion of code, yet to be tested" />
     <MESSAGE value="assignment 2 start" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 2 start" />
+    <MESSAGE value="assignment 2 finished coding, quick and dirty. untested" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 2 finished coding, quick and dirty. untested" />
   </component>
 </project>
