@@ -33,7 +33,7 @@ public class Quiz {
         for (Question question :
                 questions) {
             System.out.println(question.getQuestion());
-            if (scanner.nextLine().equalsIgnoreCase(question.getAnswer())) {
+            if (scanner.nextLine().equals(question.getAnswer())) {
                 System.out.println("Correct");
                 correctCount++;
                 questionCount++;
