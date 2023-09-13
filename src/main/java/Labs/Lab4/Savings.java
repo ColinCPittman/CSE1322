@@ -32,8 +32,9 @@ public class Savings extends Account {
         }
     }
     public void addInterest() { //charges 1.5% interest
-        double interestGained = getBalance() * 1.015;
+        double initialAmount = getBalance();
+        double interestGained = (initialAmount * 1.015) - initialAmount;
         super.deposit(interestGained);
-        System.out.printf("Customer earned $%,.2f in interest.\n", interestGained);
+        System.out.printf("Customer earned $%,.2f in interest.\n", (interestGained));
     }
 }
