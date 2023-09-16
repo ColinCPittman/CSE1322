@@ -3,7 +3,7 @@ package Labs.Lab4;
 public class Account {
     protected int accountNumber;
 
-    public void setBalanceCents(double amount) {
+    public void setBalance(double amount) {
         this.balanceCents = (int) (amount * 100);
     }
 
@@ -12,13 +12,13 @@ public class Account {
     }
 
     public Account() {
-        setBalanceCents(0.0d);
+        setBalance(0.0d);
         accountNumber = nextAccountNumber++;
     }
 
     public Account(double amount) {
         accountNumber = nextAccountNumber++;
-        setBalanceCents(amount);
+        setBalance(amount);
     }
 
     public void withdraw(double amount) {
