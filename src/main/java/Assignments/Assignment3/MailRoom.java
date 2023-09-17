@@ -45,7 +45,7 @@ public class MailRoom {
                     else System.out.println("Live box not accepted for delivery");
                 }
                 case dispatch_items -> {
-                    System.out.println("DISPATCHING THE FOLLOWING ITEMS FOR DELIVERY:\n");
+                    System.out.println("DISPATCHING THE FOLLOWING ITEMS FOR DELIVERY:");
                     for (Mail mail : deliver) {
                         System.out.println("==========");
                         System.out.print(mail.toString());
