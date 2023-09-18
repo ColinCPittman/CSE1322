@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="lab 4 coded but untested">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Envelope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Flat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Letter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/LiveBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/MailRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/RegularBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 3 initially coded, relatively untested&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Periodical.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/colin/Documents/GitHub/KSU1322/src/main/java/Assignments",
-    "settings.editor.selected.configurable": "editing.templates"
+    "settings.editor.selected.configurable": "fileTemplates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -207,7 +202,28 @@
       <option name="project" value="LOCAL" />
       <updated>1694645272335</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="assignment 3 initially coded, relatively untested">
+      <created>1694915121165</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694915121165</updated>
+    </task>
+    <task id="LOCAL-00019" summary="assignment 3 initially coded, relatively untested&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
+      <created>1694915442627</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1694915442627</updated>
+    </task>
+    <task id="LOCAL-00020" summary="assignment 3 initially coded, relatively untested&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
+      <created>1694915466053</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1694915466053</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +250,9 @@
     <MESSAGE value="try-catch fix in getnonnegative method" />
     <MESSAGE value="lab 4 initial part coded, save for the driver class." />
     <MESSAGE value="lab 4 coded but untested" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 4 coded but untested" />
+    <MESSAGE value="assignment 3 initially coded, relatively untested" />
+    <MESSAGE value="assignment 3 initially coded, relatively untested&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 3 initially coded, relatively untested&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
