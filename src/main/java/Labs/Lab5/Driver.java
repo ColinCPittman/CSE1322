@@ -12,14 +12,9 @@ public class Driver {
         Optional<String> title, author;
         Optional<Integer> isbn, issue;
         boolean exited = false;
-        for (int i = 0; i < 5; i++) {
-            do {
+        for (int i = 0; i < 5 && !exited; i++) {
                 type = dataGrabber.promptUserForChar("Please enter B for Book or P for Periodical");
-                if(type.isEmpty()) {
-                    exited = true;
-                    break;
-                }
-                if (type.isEmpty()) break;
+                if(type.isEmpty()) break;
                 switch (type.get()) {
                     case book -> {
                         title = dataGrabber.promptUserForString("Please enter the name of the Book");
@@ -42,7 +37,7 @@ public class Driver {
                     }
                     case periodical -> {
                         title = dataGrabber.promptUserForString("Please enter name of Periodical");
-                        if (title.isEmpty()) {
+                        if (title.isEmpty())  {
                             exited = true;
                             break;
                         }
@@ -52,16 +47,23 @@ public class Driver {
                             break;
                         }
                         Periodical newPeriodical = new Periodical(title.get(), issue.get());
+                        bookCollection[i] = newPeriodical;
                     }
                     default -> System.out.println("Invalid input. Please try again.");
                 }
-            } while (!exited);
-            if(exited)break;
         }
-        System.out.println("Exiting...");
+        if(exited) {
+            System.out.println("Exiting...");
+        }
+        else {
+            System.out.println("Your Items:");
+            for (Item item : bookCollection) {
+                System.out.println(item.getListing());
+            }
+        }
     }
 
-    private static final char book = 'A';
+    private static final char book = 'B';
     private static final char periodical = 'P';
 }
 
@@ -77,7 +79,7 @@ class DataGrabber {
             output = scanner.nextLine();
             if ("-1".equals(output)) {
                 return Optional.empty();
-            } else if (isNumeric(output)) {
+            } else if (isNumber(output)) {
                 System.out.println("Invalid input. Please try again.");
             } else {
                 return Optional.of(output);
@@ -100,10 +102,10 @@ class DataGrabber {
         }
     }
 
-    public static Optional<Integer> promptUserForNonNegativeInt(String choicePrompt) {
+    public static Optional<Integer> promptUserForNonNegativeInt(String prompt) {
         int value;
         while (true) {
-            System.out.print(choicePrompt);
+            System.out.print(prompt + " [type 'cancel' to return]:");
             String input = scanner.nextLine();
             try {
                 value = Integer.parseInt(input);
@@ -121,12 +123,17 @@ class DataGrabber {
         }
     }
 
-    private static boolean isNumeric(String str) {
+    private static boolean isNumber(String string) {
         try {
-            Integer.parseInt(str);
+            Integer.parseInt(string);
             return true;
-        } catch (NumberFormatException e) {
-            return false;
+        } catch (NumberFormatException err1) {
+            try {
+                Double.parseDouble(string);
+                return true;
+            }catch (NumberFormatException err2) {
+                return false;
+            }
         }
     }
 }
