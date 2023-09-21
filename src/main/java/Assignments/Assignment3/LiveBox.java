@@ -7,7 +7,7 @@ public class LiveBox extends Box{
     @Override
     public String toString() {
         return super.toString() +
-                "\n " + width + " x " + length + " x " + height +
+                "\n " + getWidth() + " x " + getLength() + " x " + height +
                 "\nAnimal: " + animal +
                 "\nCount: " + count +
                 "\nAge: " + age;

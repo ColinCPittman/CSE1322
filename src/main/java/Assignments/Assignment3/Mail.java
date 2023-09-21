@@ -1,12 +1,12 @@
 package Assignments.Assignment3;
 
 public class Mail {
-    String deliveryAddress;
-    String returnAddress;
-    double width;
-    double length;
-    int id;
-    static int nextID = -1;
+    private String deliveryAddress;
+    private String returnAddress;
+    private double width;
+    private double length;
+    private int id;
+    private static int nextID = -1;
 
     @Override
     public String toString() {

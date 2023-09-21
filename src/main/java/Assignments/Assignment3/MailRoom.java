@@ -105,28 +105,28 @@ public class MailRoom {
     }
 
     private static boolean hasAddresses(Letter letter) {
-        if (!(letter.deliveryAddress.isEmpty() && letter.returnAddress.isEmpty())) {
+        if (!(letter.getDeliveryAddress().isEmpty() && letter.getReturnAddress().isEmpty())) {
             return true;
         }
         return false;
     }
 
     private static boolean hasAddresses(Flat flat) {
-        if (!(flat.deliveryAddress.isEmpty() && flat.returnAddress.isEmpty())) {
+        if (!(flat.getDeliveryAddress().isEmpty() && flat.getReturnAddress().isEmpty())) {
             return true;
         }
         return false;
     }
 
     private static boolean hasAddresses(RegularBox box) {
-        if (!(box.deliveryAddress.isEmpty() && box.returnAddress.isEmpty())) {
+        if (!(box.getDeliveryAddress().isEmpty() && box.getReturnAddress().isEmpty())) {
             return true;
         }
         return false;
     }
 
     private static boolean hasAddresses(LiveBox liveBox) {
-        if (!(liveBox.deliveryAddress.isEmpty() && liveBox.returnAddress.isEmpty())) {
+        if (!(liveBox.getDeliveryAddress().isEmpty() && liveBox.getReturnAddress().isEmpty())) {
             return true;
         }
         return false;

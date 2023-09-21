@@ -11,7 +11,7 @@ public abstract class Envelope extends Mail{
     @Override
     public String toString() {
         return super.toString() +
-                "\n" + width + " x " + length + " x " + thickness;
+                "\n" + getWidth() + " x " + getLength() + " x " + thickness;
     }
 
     public double getThickness() {

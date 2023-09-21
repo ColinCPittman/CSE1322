@@ -12,6 +12,7 @@ public class Letter extends Envelope{
         this.letterBody = letterBody;
     }
 
+
     public Letter() {
     super();
     letterBody = "";

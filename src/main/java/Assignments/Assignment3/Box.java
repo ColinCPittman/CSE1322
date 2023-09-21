@@ -7,7 +7,7 @@ public abstract class Box extends Mail {
     @Override
     public String toString() {
         return super.toString() +
-                "\n" + width + " x " + length + " x " + height;
+                "\n" + getWidth() + " x " + getLength() + " x " + height;
     }
 
     public Box(String deliveryAddress, String returnAddress, double width, double length, double height, int count) {

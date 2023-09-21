@@ -13,7 +13,7 @@ public class RegularBox extends Box{
     @Override
     public String toString() {
         return super.toString() +
-                "\n" + width + " x " + length + " x " + height +
+                "\n" + getWidth() + " x " + getLength() + " x " + height +
                 "\nItems: " + items +
                 "\nCount: " + count +
                 "\nWeight" + weight;
