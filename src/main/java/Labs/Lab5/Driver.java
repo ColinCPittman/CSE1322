@@ -14,7 +14,10 @@ public class Driver {
         boolean exited = false;
         for (int i = 0; i < 5 && !exited; i++) {
                 type = dataGrabber.promptUserForChar("Please enter B for Book or P for Periodical");
-                if(type.isEmpty()) break;
+                if(type.isEmpty()) {
+                    exited = true;
+                    break;
+                }
                 switch (type.get()) {
                     case book -> {
                         title = dataGrabber.promptUserForString("Please enter the name of the Book");

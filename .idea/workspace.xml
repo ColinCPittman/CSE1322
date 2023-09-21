@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="no significant work done since last commit&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Envelope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Envelope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Letter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Letter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/LiveBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/LiveBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/MailRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/MailRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/RegularBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/RegularBox.java" afterDir="false" />
-    </list>
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="made Mail fields private and used getters and other tidying before submission&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -254,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695321039675</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="made Mail fields private and used getters and other tidying before submission&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
+      <created>1695323716789</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1695323716789</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +284,8 @@
     <MESSAGE value="lab 5 coded, untested and weird, experimenting with some things" />
     <MESSAGE value="lab 5 coded, untested and weird, experimenting with some things&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
     <MESSAGE value="no significant work done since last commit&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="no significant work done since last commit&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
+    <MESSAGE value="made Mail fields private and used getters and other tidying before submission&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="made Mail fields private and used getters and other tidying before submission&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
