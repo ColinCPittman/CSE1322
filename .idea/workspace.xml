@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="Lab 6 added&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver.java" afterDir="false" />
-    </list>
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +267,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695390134211</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;">
+      <created>1695417991840</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1695417991840</updated>
+    </task>
+    <task id="LOCAL-00029" summary="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1695418211323</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1695418211323</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +316,9 @@
     <MESSAGE value="made Mail fields private and used getters and other tidying before submission&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
     <MESSAGE value="fixed missing sentinel value update after type is assigned&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
     <MESSAGE value="Lab 6 added&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 6 added&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
+    <MESSAGE value="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
+    <MESSAGE value="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
