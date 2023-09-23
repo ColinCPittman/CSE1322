@@ -69,14 +69,17 @@ public class Driver {
 }
 
 /**
- * Helper class used for all the various input and input-validation related tasks
- * that these assignments often require. Offers various methods to assist with
- * coding elements that involve prompting the user and reading input from the scanner.
+ * Helper class for the various input and input-validation related operations
+ * that these assignments frequently call for.
  */
 class DataGrabber {
 
     /**
      * Repeatedly prompts the user for a string input until a string is given that cannot be parsed into a number.
+     * Prompt is proceeded by " [type 'CANCEL_VALUE' to return]:" where CANCEL_VALUE
+     * is an exit value that breaks from the sequence and returns a value to indicate
+     * the user wishes to return without proceeding.
+     * CANCEL_VALUE is determined by the class's final string of the same name.
      *
      * @param prompt The prompt to display to the user.
      * @return The user's input as a string, or null if the user cancels.
@@ -95,10 +98,15 @@ class DataGrabber {
             }
         }
     }
+
     /**
-     * Repeatedly prompts the user for a single character until valid one is given.
+     * Repeatedly prompts the user for a single character until a valid one is given.
+     * Prompt is proceeded by " [type 'CANCEL_VALUE' to return]:" where CANCEL_VALUE
+     * is an exit value that breaks from the sequence and returns a value to indicate
+     * the user wishes to return without proceeding.
+     * CANCEL_VALUE is determined by the class's final string of the same name.
      *
-     * @param prompt The prompt to display to the user.
+     * @param prompt The prompt to display to the user for input.
      * @return The user's input as a char, or '\0' if the user cancels.
      */
     public static char promptUserForChar(String prompt) {
@@ -115,6 +123,7 @@ class DataGrabber {
             }
         }
     }
+
     /**
      * Checks if the given string is a non-negative integer.
      *
@@ -128,6 +137,7 @@ class DataGrabber {
             return false;
         }
     }
+
     /**
      * Checks if the given string is a non-zero integer.
      *
@@ -141,8 +151,13 @@ class DataGrabber {
             return false;
         }
     }
+
     /**
      * Repeatedly prompts the user for a non-negative integer until a valid one is given.
+     * Prompt is proceeded by " [type 'CANCEL_VALUE' to return]:" where CANCEL_VALUE
+     * is an exit value that breaks from the sequence and returns a value to indicate
+     * the user wishes to return without proceeding.
+     * CANCEL_VALUE is determined by the class's final string of the same name.
      *
      * @param prompt The prompt to display to the user for input.
      * @return The user's input as a non-negative integer, or -1 if the user cancels.
@@ -160,8 +175,13 @@ class DataGrabber {
             }
         }
     }
+
     /**
      * Repeatedly prompts the user for a non-zero integer until a valid one is given.
+     * Prompt is proceeded by " [type 'CANCEL_VALUE' to return]:" where CANCEL_VALUE
+     * is an exit value that breaks from the sequence and returns a value to indicate
+     * the user wishes to return without proceeding.
+     * CANCEL_VALUE is determined by the class's final string of the same name.
      *
      * @param prompt The prompt to display to the user for input.
      * @return The user's input as a non-zero integer, or -1 if the user cancels.
@@ -179,6 +199,7 @@ class DataGrabber {
             }
         }
     }
+
     /**
      * Checks if the given string is an integer or a double.
      *
@@ -238,6 +259,7 @@ class DataGrabber {
 
         return userInput;
     }
+
     /**
      * Checks if a given menu choice falls within the parameters.
      *
@@ -252,8 +274,20 @@ class DataGrabber {
     }
 
     public static Scanner scanner = new Scanner(System.in);
+    /**
+     * This value sets what the user must type to cancel from being asked for input.
+     */
     public static final String CANCEL_VALUE = "cancel";
+    /**
+     * Returned when user chooses to cancel from a prompt asking them to enter a number.
+     */
     public static final int CANCEL_OUTPUT_INT = -1;
+    /**
+     * Returned when user chooses to cancel form a prompt asking them to enter a character.
+     */
     public static final char CANCEL_OUTPUT_CHAR = '\0';
+    /**
+     * Returned when user chooses to cancels from a prompt asking them to enter a string.
+     */
     public static final String CANCEL_OUTPUT_STRING = null;
 }
