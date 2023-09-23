@@ -1,0 +1,155 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "Driver",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": false,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Labs.Lab5.Book",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2360424 { 
+   	label=Lab5
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Book1739534512[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Book</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   author: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   isbn_number: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Book(title: String, isbn_number: int, author: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Book()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAuthor(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getIsbn_number(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getListing(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setAuthor(author: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setIsbn_number(isbn_number: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Item1739534512[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Item</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   title: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Item()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Item(title: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getListing(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getTitle(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setTitle(title: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Periodical1739534512[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Periodical</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   issueNum: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Periodical()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Periodical(title: String, issueNum: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getIssueNum(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getListing(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setIssueNum(issueNum: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Item1739534512 -> Book1739534512[arrowhead=none, arrowtail=empty, dir=both];
+Item1739534512 -> Periodical1739534512[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

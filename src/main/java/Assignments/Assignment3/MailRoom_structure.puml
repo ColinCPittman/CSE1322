@@ -1,0 +1,264 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "Mail, Box",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": false,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Assignments.Assignment3.MailRoom",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_877724954 { 
+   	label=Assignment3
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Box1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Box</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   count: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   height: double [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Box(deliveryAddress: String, returnAddress: String, width: double, length: double, height: double, count: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Box()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getCount(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getHeight(): double</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Envelope1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Envelope</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   thickness: double [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Envelope(deliveryAddress: String, returnAddress: String, width: double, length: double, thickness: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Envelope()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getThickness(): double</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Flat1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Flat</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   contents: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Flat()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Flat(deliveryAddress: String, returnAddress: String, width: double, length: double, thickness: double, contents: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getContents(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Letter1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Letter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   letterBody: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Letter(deliveryAddress: String, returnAddress: String, width: double, length: double, thickness: double, letterBody: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Letter()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getLetterBody(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LiveBox1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LiveBox</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   age: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   animal: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ LiveBox(deliveryAddress: String, returnAddress: String, width: double, length: double, height: double, count: int, animal: String, age: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ LiveBox()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAge(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAnimal(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Mail1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Mail</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   deliveryAddress: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   length: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   returnAddress: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   width: double [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Mail(deliveryAddress: String, returnAddress: String, width: double, length: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Mail()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getDeliveryAddress(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getId(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getLength(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getReturnAddress(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getWidth(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setDeliveryAddress(deliveryAddress: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setId(id: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setLength(length: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setReturnAddress(returnAddress: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setWidth(width: double)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MailRoom1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MailRoom</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- captureMailInput(inputs: MailInput, mailClass: Class&lt;?&gt;): MailInput</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleFlat(flat: Flat, deliver: ArrayList&lt;Mail&gt;): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleLetter(letter: Letter, deliver: ArrayList&lt;Mail&gt;): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleLiveBox(liveBox: LiveBox, deliver: ArrayList&lt;Mail&gt;): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleRegularBox(box: RegularBox, deliver: ArrayList&lt;Mail&gt;): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- hasAddresses(letter: Letter): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- hasAddresses(flat: Flat): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- hasAddresses(box: RegularBox): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- hasAddresses(liveBox: LiveBox): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- isRectangular(letter: Letter): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForMenuChoice(lowValue: int, highValue: int, exitValue: int, choicePrompt: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForNonNegativeDouble(choicePrompt: String): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForNonNegativeInt(choicePrompt: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForString(prompt: String): String</TD></TR>
+<TR><TD ALIGN="LEFT" >- sizeIsValid(flat: Flat): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sizeIsValid(liveBox: LiveBox): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- sizeIsValid(box: RegularBox): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- sizeIsValid(letter: Letter): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+RegularBox1021565922[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)RegularBox</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   items: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   weight: double [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ RegularBox()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ RegularBox(deliveryAddress: String, returnAddress: String, width: double, length: double, height: double, count: int, items: String, weight: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getItems(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getWeight(): double</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Box1021565922 -> LiveBox1021565922[arrowhead=none, arrowtail=empty, dir=both];
+Box1021565922 -> RegularBox1021565922[arrowhead=none, arrowtail=empty, dir=both];
+Envelope1021565922 -> Flat1021565922[arrowhead=none, arrowtail=empty, dir=both];
+Envelope1021565922 -> Letter1021565922[arrowhead=none, arrowtail=empty, dir=both];
+Mail1021565922 -> Box1021565922[arrowhead=none, arrowtail=empty, dir=both];
+Mail1021565922 -> Envelope1021565922[arrowhead=none, arrowtail=empty, dir=both];
+MailRoom1021565922 -> Letter1021565922[label="main() -> Letter()"];
+    
+}
+@enduml

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="changed static calls &#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/Assignment3_structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/MailRoom_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Book_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Lab5_structure.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab5/Driver.java" afterDir="false" />
     </list>
@@ -18,6 +23,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="UML Class" />
+        <option value="UML Component" />
       </list>
     </option>
   </component>
@@ -53,15 +60,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/Documents/GitHub/KSU1322/src/main/java/Assignments&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Component",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/colin/Documents/GitHub/KSU1322/src/main/java/Assignments/Assignment3",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\colin\Documents\GitHub\KSU1322\src\main\java\Assignments" />
@@ -291,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695418372170</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed javadoc wording and added some for DataGrabber's constants.&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1695485615705</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1695485615705</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +344,9 @@
     <MESSAGE value="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;" />
     <MESSAGE value="reworked lab 5, the optionals weren't a good fit for the typical use case that the DataGrabber method is designed for&#10;&#10;also fleshed out the DataGrabber class much more and added JavaDocs.&#10;&#10;Signed-off-by: ColinCPittman &lt;Colincpittman@gmail.com&gt;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="changed static calls &#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed static calls &#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="changed javadoc wording and added some for DataGrabber's constants.&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

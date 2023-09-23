@@ -20,12 +20,12 @@ public class Driver {
             switch (type) {
                 case book -> {
                     title = DataGrabber.promptUserForString("Please enter the name of the Book");
-                    if (title == DataGrabber.CANCEL_OUTPUT_STRING) {
+                    if (DataGrabber.CANCEL_VALUE.equals(title)) {
                         exited = true;
                         break;
                     }
                     author = DataGrabber.promptUserForString("Please enter the author of the Book");
-                    if (author == DataGrabber.CANCEL_OUTPUT_STRING) {
+                    if (DataGrabber.CANCEL_VALUE.equals(author)) {
                         exited = true;
                         break;
                     }
@@ -39,7 +39,7 @@ public class Driver {
                 }
                 case periodical -> {
                     title = DataGrabber.promptUserForString("Please enter name of Periodical");
-                    if (title == DataGrabber.CANCEL_OUTPUT_STRING) {
+                    if (DataGrabber.CANCEL_VALUE.equals(title)) {
                         exited = true;
                         break;
                     }
@@ -68,6 +68,10 @@ public class Driver {
     private static final char periodical = 'P';
 }
 
+/**
+ * Helper class for the input and input validation operations
+ * that these assignments often call for.
+ */
 class DataGrabber {
 
     /**
@@ -83,10 +87,10 @@ class DataGrabber {
     public static String promptUserForString(String prompt) {
         String output;
         while (true) {
-            System.out.print(prompt + " [type \'" + CANCEL_VALUE + "\' to return]:");
+            System.out.print(prompt + " [type '" + CANCEL_VALUE + "' to return]:");
             output = scanner.nextLine();
             if (CANCEL_VALUE.equals(output)) {
-                return CANCEL_OUTPUT_STRING;
+                return CANCEL_VALUE;
             } else if (isNumber(output)) {
                 System.out.println("Invalid input. Please try again.");
             } else {
@@ -108,7 +112,7 @@ class DataGrabber {
     public static char promptUserForChar(String prompt) {
         String output;
         while (true) {
-            System.out.print(prompt + " [type \'" + CANCEL_VALUE + "\' to return]:");
+            System.out.print(prompt + " [type '" + CANCEL_VALUE + "' to return]:");
             output = scanner.nextLine().trim();
             if (CANCEL_VALUE.equalsIgnoreCase(output)) {
                 return CANCEL_OUTPUT_CHAR;
@@ -160,7 +164,7 @@ class DataGrabber {
      */
     public static int promptUserForNonNegativeInt(String prompt) {
         while (true) {
-            System.out.print(prompt + " [type \'" + CANCEL_VALUE + "\' to return]:");
+            System.out.print(prompt + " [type '" + CANCEL_VALUE + "' to return]:");
             String input = scanner.nextLine();
             if (isNonNegativeInteger(input)) {
                 return Integer.parseInt(input);
@@ -184,14 +188,14 @@ class DataGrabber {
      */
     public static int promptUserForNonZeroInt(String prompt) {
         while (true) {
-            System.out.print(prompt + " [type \'" + CANCEL_VALUE + "\' to return]:");
+            System.out.print(prompt + " [type '" + CANCEL_VALUE + "' to return]:");
             String input = scanner.nextLine();
             if (isNonZeroInteger(input)) {
                 return Integer.parseInt(input);
             } else if (CANCEL_VALUE.equalsIgnoreCase(input)) {
                 return CANCEL_OUTPUT_INT;
             } else {
-                System.out.println("Invalid input. Please enter a non-zero number or \'" + CANCEL_VALUE + "\' to return.");
+                System.out.println("Invalid input. Please enter a non-zero number or '" + CANCEL_VALUE + "' to return.");
             }
         }
     }
@@ -282,8 +286,5 @@ class DataGrabber {
      * Returned when user chooses to cancel form a prompt asking them to enter a character.
      */
     public static final char CANCEL_OUTPUT_CHAR = '\0';
-    /**
-     * Returned when user chooses to cancels from a prompt asking them to enter a string.
-     */
-    public static final String CANCEL_OUTPUT_STRING = null;
+
 }
