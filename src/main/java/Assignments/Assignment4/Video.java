@@ -6,20 +6,20 @@ public class Video extends Media implements IImageStandard,IAudioStandard{
 
     @Override
     public String getAudioCodec() {
-        return "Audio codec: " + getAudioCodec();
+        return "Audio codec: " + this.audioCodec;
     }
 
     @Override
     public String getImageCodec() {
-        return "Image codec: " + getImageCodec();
+        return "Image codec: " + this.imageCodec;
     }
 
     @Override
     public String getMediaInfo() {
         return "Video ID: " + getId() +
-                "Video name: " + getFileName() +
-                "Image codec: " + getImageCodec() +
-                "Audio codec: " + getAudioCodec();
+                "\nVideo name: " + getFileName() +
+                "\nImage codec: " + getImageCodec() +
+                "\nAudio codec: " + getAudioCodec();
     }
 
     public Video(String imageCodec, String audioCodec) {

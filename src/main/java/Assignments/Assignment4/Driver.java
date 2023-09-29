@@ -9,6 +9,7 @@ public class Driver {
         ArrayList<Media> allMedia = new ArrayList<>();
         int mainMenuChoice;
         do {
+            System.out.println(mainMenu);
             mainMenuChoice = DataGrabber.promptUserForMenuChoice(fromOne, toEight, exit_value, "Enter choice");
             switch (mainMenuChoice) {
                 case add_image -> {
@@ -32,13 +33,38 @@ public class Driver {
                     Video newVideo = new Video(inputs.getName(), inputs.getImageCodec(), inputs.getAudioCodec());
                     allMedia.add(newVideo);
                 }
-                case show_images -> {
-                    for (Media media : allMedia) {
-                        System.out.println(((Image) media).getMediaInfo());
+                case show_images -> showMediaInfo(allMedia, Image.class);
+                case show_music -> showMediaInfo(allMedia, Music.class);
+                case show_videos -> showMediaInfo(allMedia, Video.class);
+                case show_images_and_videos -> {
+                    for (Media medias : allMedia) {
+                        if (medias instanceof IImageStandard) System.out.println(((IImageStandard) medias).getMediaInfo());
                     }
                 }
+                case show_music_and_videos -> {
+                    for (Media medias : allMedia) {
+                        if( medias instanceof IAudioStandard) System.out.println(((IAudioStandard) medias).getMediaInfo());
+                    }
+                }
+                case exit_value -> System.out.println("Shutting down...");
             }
         }while(mainMenuChoice != exit_value);
+    }
+
+    private static void showMediaInfo(ArrayList<Media> media, Class<?> mediaClass) {
+        for (Media medias : media) {
+            if(mediaClass.isInstance(medias)) {
+              if(medias instanceof Image) {
+                  System.out.println(((Image) medias).getMediaInfo());
+              }
+              else if (medias instanceof Music) {
+                  System.out.println(((Music) medias).getMediaInfo());
+              }
+              else if (medias instanceof Video) {
+                  System.out.println(((Video) medias).getMediaInfo());
+              }
+            }
+        }
     }
     private static final int add_image = 1;
     private static final int add_music = 2;
@@ -54,7 +80,8 @@ public class Driver {
     private static final MediaInput user_cancelled = null;
 
     private static String mainMenu = """
-                [Media Manager]
+            [Media Manager]
+            
             1- Add Image
             2- Add Music
             3- Add Video
@@ -269,7 +296,7 @@ class DataGrabber {
      * @param lowValue     Lowest numbered menu option.
      * @param highValue    Highest numbered menu option.
      * @param exitValue    Number option to exit the menu.
-     * @param choicePrompt Prompt to display for user input.
+     * @param choicePrompt Prompt to display for user input. Will be appended with a colon before printing.
      * @return The user's menu option choice as an int or the exit value.
      */
     public static int promptUserForMenuChoice(int lowValue, int highValue, int exitValue, String choicePrompt) {
@@ -277,7 +304,7 @@ class DataGrabber {
         int userInput = exitValue;
 
         do {
-            System.out.print(choicePrompt);
+            System.out.print(choicePrompt + ":");
             isInputValid = true;
 
             try {

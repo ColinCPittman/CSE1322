@@ -11,12 +11,12 @@ public class Image extends Media implements IImageStandard{
     @Override
     public String getMediaInfo() {
         return "Image ID: " + getId() +
-                "Image name: " + getFileName() +
-                "Image codec: " + getImageCodec();
+                "\nImage name: " + getFileName() +
+                "\nImage codec: " + getImageCodec();
     }
 
     @Override
     public String getImageCodec() {
-        return "Image codec: " + getImageCodec();
+        return "Image codec: " + this.imageCodec;
     }
 }

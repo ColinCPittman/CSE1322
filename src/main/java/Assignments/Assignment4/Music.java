@@ -5,14 +5,14 @@ public class Music extends Media implements IAudioStandard{
 
     @Override
     public String getAudioCodec() {
-        return "Audio codec: " + getAudioCodec();
+        return "Audio codec: " + this.audioCodec;
     }
 
     @Override
     public String getMediaInfo() {
         return "Music ID: " + getId() +
-                "Music name: " + getFileName() +
-                "Audio codec: " + getAudioCodec();
+                "\nMusic name: " + getFileName() +
+                "\nAudio codec: " + getAudioCodec();
     }
 
     public Music(String audioCodec) {

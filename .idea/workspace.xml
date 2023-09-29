@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/IAudioStandard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/IImageStandard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/IMediaStandard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2023_12_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2023_12_00__Changes_.xml" beforeDir="false" />
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="quick and dirty getting assignment 4 on paper, almost done in this session&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/LiveBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment3/LiveBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment4/Video.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695494161065</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="quick and dirty getting assignment 4 on paper, almost done in this session&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1695850942085</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1695850942085</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +333,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creation" />
     <MESSAGE value="classes outlined" />
     <MESSAGE value="initial completion of code, yet to be tested" />
     <MESSAGE value="assignment 2 start" />
@@ -358,7 +357,8 @@
     <MESSAGE value="changed static calls &#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="changed javadoc wording and added some for DataGrabber's constants.&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 3 and lab 5 submission&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="quick and dirty getting assignment 4 on paper, almost done in this session&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick and dirty getting assignment 4 on paper, almost done in this session&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
