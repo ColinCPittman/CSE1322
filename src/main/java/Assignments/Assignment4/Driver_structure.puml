@@ -1,0 +1,224 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Assignments.Assignment4.Driver",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_877724953 { 
+   	label=Assignment4
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   DataGrabber1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DataGrabber</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- isNonNegativeInteger(input: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- isNonZeroInteger(input: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- isNumber(string: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- isValidMenuInput(input: int, lowValue: int, highValue: int, exitValue: int): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForChar(prompt: String): char</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForMenuChoice(lowValue: int, highValue: int, exitValue: int, choicePrompt: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForNonNegativeInt(prompt: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForNonZeroInt(prompt: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ promptUserForString(prompt: String): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Driver1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Driver</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >- showMediaInfo(media: ArrayList&lt;Media&gt;, mediaClass: Class&lt;?&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Image1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Image</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   imageCodec: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Image(name: String, imageCodec: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getImageCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMediaInfo(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Media1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Media</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   fileName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Media()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Media(fileName: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getFileName(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getId(): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MediaInput1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MediaInput</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   audioCodec: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   imageCodec: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getAudioCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getImageCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getInputs(inputs: MediaInput, mediaClass: Class&lt;? extends Media&gt;): MediaInput</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getName(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Music1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Music</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   audioCodec: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Music(audioCodec: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Music(name: String, audioCodec: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAudioCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMediaInfo(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Video1021565921[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Video</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   audioCodec: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   imageCodec: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Video(imageCodec: String, audioCodec: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Video(name: String, imageCodec: String, audioCodec: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAudioCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getImageCodec(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMediaInfo(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Driver1021565921 -> DataGrabber1021565921[label="main() -> promptUserForMenuChoice()"];
+Image1021565921 -> Video1021565921[arrowhead=none];
+Media1021565921 -> Image1021565921[arrowhead=none, arrowtail=empty, dir=both];
+Media1021565921 -> Video1021565921[arrowhead=none, arrowtail=empty, dir=both];
+Video1021565921 -> Image1021565921[label="getMediaInfo() -> getMediaInfo()", arrowhead=none];
+Video1021565921 -> Music1021565921[arrowhead=none];
+    
+}
+@enduml
