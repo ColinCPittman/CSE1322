@@ -21,6 +21,5 @@ public class DNALib {
         }
         return dna.charAt(dna.length() - 1) + reverser(dna.substring(0, dna.length() - 1));
     }
-
 }
 
