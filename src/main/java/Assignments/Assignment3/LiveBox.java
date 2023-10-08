@@ -4,6 +4,7 @@ public class LiveBox extends Box{
     private String animal;
     private int age;
 
+
     @Override
     public String toString() {
         return super.toString() +

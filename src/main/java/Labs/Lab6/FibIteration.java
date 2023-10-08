@@ -4,7 +4,14 @@ public class FibIteration implements FindFib{
 
     @Override
     public  int calculate_fib(int num) {
-        if(num <= 2) return 1;
-        return(calculate_fib(num -1) + calculate_fib(num - 2));
+    int fib1 = 1;
+    int fib2 = 1;
+    int fibResult = 1;
+        for (int i = 3; i <= num; i++) {
+            fibResult = fib1+fib2;
+            fib1=fib2;
+            fib2 = fibResult;
+        }
+    return fibResult;
     }
 }

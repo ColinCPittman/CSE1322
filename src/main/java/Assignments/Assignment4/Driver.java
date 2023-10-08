@@ -1,71 +1,138 @@
-package Labs.Lab5;
+package Assignments.Assignment4;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Driver {
     public static void main(String[] args) {
-        System.out.println("Initializing ADD FIVE ITEMS TO CATALOG ...");
-        Item[] bookCollection = new Item[5];
-        int type;
-        String title, author;
-        int isbn, issue;
-        boolean exited = false;
-        for (int i = 0; i < 5 && !exited; i++) {
-            type = DataGrabber.promptUserForChar("Please enter B for Book or P for Periodical");
-            if (type == DataGrabber.CANCEL_OUTPUT_CHAR) {
-                exited = true;
-                break;
-            }
-            switch (type) {
-                case book -> {
-                    title = DataGrabber.promptUserForString("Please enter the name of the Book");
-                    if (DataGrabber.CANCEL_VALUE.equals(title)) {
-                        exited = true;
-                        break;
-                    }
-                    author = DataGrabber.promptUserForString("Please enter the author of the Book");
-                    if (DataGrabber.CANCEL_VALUE.equals(author)) {
-                        exited = true;
-                        break;
-                    }
-                    isbn = DataGrabber.promptUserForNonNegativeInt("Please enter ISBN of the Book");
-                    if (isbn == DataGrabber.CANCEL_OUTPUT_INT) {
-                        exited = true;
-                        break;
-                    }
-                    Book newBook = new Book(title, isbn, author);
-                    bookCollection[i] = newBook;
+        ArrayList<Media> allMedia = new ArrayList<>();
+        int mainMenuChoice;
+        do {
+            System.out.println(mainMenu);
+            mainMenuChoice = DataGrabber.promptUserForMenuChoice(fromOne, toEight, exit_value, "Enter choice");
+            switch (mainMenuChoice) {
+                case add_image -> {
+                    MediaInput inputs = new MediaInput();
+                    inputs = inputs.getInputs(inputs, Image.class);
+                    if (inputs == user_cancelled) break;
+                    Image newImage = new Image(inputs.getName(), inputs.getImageCodec());
+                    allMedia.add(newImage);
                 }
-                case periodical -> {
-                    title = DataGrabber.promptUserForString("Please enter name of Periodical");
-                    if (DataGrabber.CANCEL_VALUE.equals(title)) {
-                        exited = true;
-                        break;
-                    }
-                    issue = DataGrabber.promptUserForNonNegativeInt("Please enter the issue number");
-                    if (issue == DataGrabber.CANCEL_OUTPUT_INT) {
-                        exited = true;
-                        break;
-                    }
-                    Periodical newPeriodical = new Periodical(title, issue);
-                    bookCollection[i] = newPeriodical;
+                case add_music -> {
+                    MediaInput inputs = new MediaInput();
+                    inputs = inputs.getInputs(inputs,Music.class);
+                    if(inputs == user_cancelled) break;
+                    Music newMusic = new Music(inputs.getName(),inputs.getAudioCodec());
+                    allMedia.add(newMusic);
                 }
-                default -> System.out.println("Invalid input. Please try again.");
+                case add_video -> {
+                    MediaInput inputs = new MediaInput();
+                    inputs = inputs.getInputs(inputs, Video.class);
+                    if(inputs == user_cancelled) break;
+                    Video newVideo = new Video(inputs.getName(), inputs.getImageCodec(), inputs.getAudioCodec());
+                    allMedia.add(newVideo);
+                }
+                case show_images -> showMediaInfo(allMedia, Image.class);
+                case show_music -> showMediaInfo(allMedia, Music.class);
+                case show_videos -> showMediaInfo(allMedia, Video.class);
+                case show_images_and_videos -> {
+                    for (Media medias : allMedia) {
+                        if (medias instanceof IImageStandard) System.out.println(((IImageStandard) medias).getMediaInfo());
+                    }
+                }
+                case show_music_and_videos -> {
+                    for (Media medias : allMedia) {
+                        if( medias instanceof IAudioStandard) System.out.println(((IAudioStandard) medias).getMediaInfo());
+                    }
+                }
+                case exit_value -> System.out.println("Shutting down...");
             }
-        }
-        if (exited) {
-            System.out.println("Exiting...");
-        } else {
-            System.out.println("Your Items:");
-            for (Item item : bookCollection) {
-                System.out.println(item.getListing());
+        }while(mainMenuChoice != exit_value);
+    }
+
+    private static void showMediaInfo(ArrayList<Media> media, Class<?> mediaClass) {
+        for (Media medias : media) {
+            if(mediaClass.isInstance(medias)) {
+              if(medias instanceof Image) {
+                  System.out.println(((Image) medias).getMediaInfo());
+              }
+              else if (medias instanceof Music) {
+                  System.out.println(((Music) medias).getMediaInfo());
+              }
+              else if (medias instanceof Video) {
+                  System.out.println(((Video) medias).getMediaInfo());
+              }
             }
         }
     }
+    private static final int add_image = 1;
+    private static final int add_music = 2;
+    private static final int add_video = 3;
+    private static final int show_images = 4;
+    private static final int show_music = 5;
+    private static final int show_videos = 6;
+    private static final int show_images_and_videos = 7;
+    private static final int show_music_and_videos = 8;
+    private static final int exit_value = 9;
+    private static final int fromOne = 1;
+    private static final int toEight = 8;
+    private static final MediaInput user_cancelled = null;
 
-    private static final char book = 'B';
-    private static final char periodical = 'P';
+    private static String mainMenu = """
+            [Media Manager]
+            
+            1- Add Image
+            2- Add Music
+            3- Add Video
+            4- Show images
+            5- Show music
+            6- Show videos
+            7- Show images and videos
+            8- Show music and videos
+            9- Exit
+            """;
+}
+
+/**
+ * Helper class for prompting the user for and storing the data to be captured to generate a new Media object.
+ */
+class MediaInput {
+    public String getName() {
+        return name;
+    }
+
+    public String getImageCodec() {
+        return imageCodec;
+    }
+
+    public String getAudioCodec() {
+        return audioCodec;
+    }
+
+    private String name, imageCodec, audioCodec;
+
+    /**
+     * Fills provided MediaInput object fields with the necessary info to instantiate
+     * an object of the provided Media child class.
+     *
+     * @param inputs For storing the information to be used to instantiate a new Media object.
+     * @param mediaClass Used to determine the which information the user need for the class.
+     * @return the provided input or null if the user choose to cancel.
+     */
+    public MediaInput getInputs(MediaInput inputs, Class<? extends Media> mediaClass) {
+        inputs.name = DataGrabber.promptUserForString("Enter file name");
+        if (DataGrabber.CANCEL_VALUE.equals(inputs.name)) return null;
+        if (mediaClass.isAssignableFrom(Image.class) || mediaClass.isAssignableFrom(Video.class)) {
+            inputs.imageCodec = DataGrabber.promptUserForString("Enter image codec");
+            if (DataGrabber.CANCEL_VALUE.equals(inputs.imageCodec)) return null;
+        }
+        if(mediaClass.isAssignableFrom(Music.class) || mediaClass.isAssignableFrom(Video.class)) {
+            inputs.audioCodec = DataGrabber.promptUserForString("Enter audio codec");
+            if(DataGrabber.CANCEL_VALUE.equals(inputs.audioCodec)) return null;
+        }
+        return inputs;
+    }
 }
 
 /**
@@ -229,7 +296,7 @@ class DataGrabber {
      * @param lowValue     Lowest numbered menu option.
      * @param highValue    Highest numbered menu option.
      * @param exitValue    Number option to exit the menu.
-     * @param choicePrompt Prompt to display for user input.
+     * @param choicePrompt Prompt to display for user input. Will be appended with a colon before printing.
      * @return The user's menu option choice as an int or the exit value.
      */
     public static int promptUserForMenuChoice(int lowValue, int highValue, int exitValue, String choicePrompt) {
@@ -237,7 +304,7 @@ class DataGrabber {
         int userInput = exitValue;
 
         do {
-            System.out.print(choicePrompt);
+            System.out.print(choicePrompt + ":");
             isInputValid = true;
 
             try {
