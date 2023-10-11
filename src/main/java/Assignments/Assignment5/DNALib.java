@@ -1,9 +1,18 @@
 package Assignments.Assignment5;
 
+import java.util.Scanner;
+
 public class DNALib {
     public static void main(String[] args) {
-        System.out.println(validator("GATAcP"));
-        System.out.println(reverser("CAT"));
+        System.out.print("Please enter a DNA sequence:");
+        Scanner sc = new Scanner(System.in);
+        String sequence = sc.nextLine();
+        if(validator(sequence)){
+            sequence = reverser(sequence);
+            sequence = inverser(sequence);
+            sequence = translator(sequence);
+            System.out.println(sequence);
+        } else System.out.println("The DNA sequence is invalid.");
     }
 
     public static boolean validator(String dna) {

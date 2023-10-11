@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 5, struggling with validator&#10;&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab7/Lab7A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="Lab7 and DNALib WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab7/Lab7B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment5/DNALib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment5/DNALib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab6/2202 Fall 2023 Exam 2 Practice Problems.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab6/CSE1322 Lab Midterm.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab6/Complete Instructions &amp; Usability Test (Major Assignment Due March 4).html.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab6/POLS 1101 - 7 - Social Movements.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab6/UsabilityTestWorksheet (2).pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +76,26 @@
       <recent name="C:\Users\colin\Documents\GitHub\KSU1322\src\main\resources\archetype-resources\src\main\java" />
       <recent name="C:\Users\colin\Documents\GitHub\KSU1322\src\main\resources\archetype-resources\src\main\java\Labs" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Lab7B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Labs.Lab7.Lab7B" />
+      <module name="KSU1322" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labs.Lab7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Lab7B" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -358,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696776266295</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Lab7 and DNALib WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1697035417640</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1697035417641</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +395,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="assignment 2 finished coding, quick and dirty. untested" />
     <MESSAGE value="fixed logic error in transferBus method" />
     <MESSAGE value="made lab3 quiz answers case sensitive" />
     <MESSAGE value="readability changes for grader, ready to submit, no more time to improve this code. assignment 2 and lab3 submissions" />
@@ -399,7 +419,8 @@
     <MESSAGE value="looked over assignment 4 and cleaned up some oversights&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="submitting assignment 4 and lab 6&#10;&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="assignment 5, struggling with validator&#10;&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 5, struggling with validator&#10;&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="Lab7 and DNALib WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7 and DNALib WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
