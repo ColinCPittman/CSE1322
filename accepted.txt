@@ -1,0 +1,406 @@
+Case ID: 3
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $200000.0
+Plaintiff’s Citizenship: Montana
+Defendant’s Citizenship: Montana
+Originally filled in: Delaware
+==============================
+Case ID: 5
+Cause of action: Trespass to Chattel
+Amount in Controversy: $125000.0
+Plaintiff’s Citizenship: Hawaii
+Defendant’s Citizenship: Hawaii
+Originally filled in: Wyoming
+==============================
+Case ID: 11
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $145000.0
+Plaintiff’s Citizenship: Arizona
+Defendant’s Citizenship: Arizona
+Originally filled in: Arizona
+==============================
+Case ID: 12
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $85000.0
+Plaintiff’s Citizenship: Alabama
+Defendant’s Citizenship: Vermont
+Originally filled in: Wyoming
+==============================
+Case ID: 15
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $115000.0
+Plaintiff’s Citizenship: Arizona
+Defendant’s Citizenship: Alabama
+Originally filled in: Vermont
+==============================
+Case ID: 16
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $185000.0
+Plaintiff’s Citizenship: Colorado
+Defendant’s Citizenship: Louisiana
+Originally filled in: Louisiana
+==============================
+Case ID: 17
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $155000.0
+Plaintiff’s Citizenship: New Jersey
+Defendant’s Citizenship: Kansas
+Originally filled in: Mississippi
+==============================
+Case ID: 18
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $45000.0
+Plaintiff’s Citizenship: Michigan
+Defendant’s Citizenship: Arizona
+Originally filled in: Alabama
+==============================
+Case ID: 21
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $190000.0
+Plaintiff’s Citizenship: South Carolina
+Defendant’s Citizenship: Kansas
+Originally filled in: Montana
+==============================
+Case ID: 24
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $150000.0
+Plaintiff’s Citizenship: Wisconsin
+Defendant’s Citizenship: Wisconsin
+Originally filled in: Pennsylvania
+==============================
+Case ID: 26
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $150000.0
+Plaintiff’s Citizenship: Montana
+Defendant’s Citizenship: Utah
+Originally filled in: South Dakota
+==============================
+Case ID: 31
+Cause of action: Private Trespass
+Amount in Controversy: $175000.0
+Plaintiff’s Citizenship: Louisiana
+Defendant’s Citizenship: Louisiana
+Originally filled in: South Dakota
+==============================
+Case ID: 32
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $180000.0
+Plaintiff’s Citizenship: Kansas
+Defendant’s Citizenship: Nevada
+Originally filled in: West Virginia
+==============================
+Case ID: 36
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $55000.0
+Plaintiff’s Citizenship: Wisconsin
+Defendant’s Citizenship: Wisconsin
+Originally filled in: Alabama
+==============================
+Case ID: 37
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $80000.0
+Plaintiff’s Citizenship: Alabama
+Defendant’s Citizenship: Mississippi
+Originally filled in: Vermont
+==============================
+Case ID: 45
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $60000.0
+Plaintiff’s Citizenship: Washington
+Defendant’s Citizenship: Louisiana
+Originally filled in: Idaho
+==============================
+Case ID: 50
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $65000.0
+Plaintiff’s Citizenship: Georgia
+Defendant’s Citizenship: Oregon
+Originally filled in: New Mexico
+==============================
+Case ID: 54
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $50000.0
+Plaintiff’s Citizenship: Hawaii
+Defendant’s Citizenship: Missouri
+Originally filled in: Delaware
+==============================
+Case ID: 59
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $45000.0
+Plaintiff’s Citizenship: Oklahoma
+Defendant’s Citizenship: New Jersey
+Originally filled in: Kansas
+==============================
+Case ID: 64
+Cause of action: Battery
+Amount in Controversy: $185000.0
+Plaintiff’s Citizenship: Oklahoma
+Defendant’s Citizenship: Oklahoma
+Originally filled in: Ohio
+==============================
+Case ID: 68
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $135000.0
+Plaintiff’s Citizenship: New Hampshire
+Defendant’s Citizenship: Nebraska
+Originally filled in: Nebraska
+==============================
+Case ID: 70
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $90000.0
+Plaintiff’s Citizenship: North Dakota
+Defendant’s Citizenship: North Dakota
+Originally filled in: North Dakota
+==============================
+Case ID: 77
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $115000.0
+Plaintiff’s Citizenship: Oregon
+Defendant’s Citizenship: Montana
+Originally filled in: Oregon
+==============================
+Case ID: 81
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $105000.0
+Plaintiff’s Citizenship: Rhode Island
+Defendant’s Citizenship: Rhode Island
+Originally filled in: Wisconsin
+==============================
+Case ID: 82
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $170000.0
+Plaintiff’s Citizenship: Minnesota
+Defendant’s Citizenship: Idaho
+Originally filled in: Maryland
+==============================
+Case ID: 87
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $150000.0
+Plaintiff’s Citizenship: Wyoming
+Defendant’s Citizenship: Louisiana
+Originally filled in: Oklahoma
+==============================
+Case ID: 89
+Cause of action: Negligence
+Amount in Controversy: $190000.0
+Plaintiff’s Citizenship: Massachusetts
+Defendant’s Citizenship: Massachusetts
+Originally filled in: Nevada
+==============================
+Case ID: 91
+Cause of action: Negligence
+Amount in Controversy: $130000.0
+Plaintiff’s Citizenship: Wyoming
+Defendant’s Citizenship: Wyoming
+Originally filled in: Kentucky
+==============================
+Case ID: 92
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $155000.0
+Plaintiff’s Citizenship: Idaho
+Defendant’s Citizenship: Massachusetts
+Originally filled in: Vermont
+==============================
+Case ID: 94
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $195000.0
+Plaintiff’s Citizenship: Alabama
+Defendant’s Citizenship: Idaho
+Originally filled in: Missouri
+==============================
+Case ID: 97
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $40000.0
+Plaintiff’s Citizenship: Illinois
+Defendant’s Citizenship: Illinois
+Originally filled in: Washington
+==============================
+Case ID: 100
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $150000.0
+Plaintiff’s Citizenship: Alaska
+Defendant’s Citizenship: Hawaii
+Originally filled in: Vermont
+==============================
+Case ID: 101
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $130000.0
+Plaintiff’s Citizenship: New Hampshire
+Defendant’s Citizenship: New Hampshire
+Originally filled in: New Hampshire
+==============================
+Case ID: 103
+Cause of action: Negligence
+Amount in Controversy: $195000.0
+Plaintiff’s Citizenship: Rhode Island
+Defendant’s Citizenship: Rhode Island
+Originally filled in: Kentucky
+==============================
+Case ID: 107
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $75000.0
+Plaintiff’s Citizenship: Florida
+Defendant’s Citizenship: Maine
+Originally filled in: Wyoming
+==============================
+Case ID: 108
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $135000.0
+Plaintiff’s Citizenship: Colorado
+Defendant’s Citizenship: Missouri
+Originally filled in: Nebraska
+==============================
+Case ID: 116
+Cause of action: Private Trespass
+Amount in Controversy: $165000.0
+Plaintiff’s Citizenship: Connecticut
+Defendant’s Citizenship: Connecticut
+Originally filled in: Vermont
+==============================
+Case ID: 126
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $125000.0
+Plaintiff’s Citizenship: Idaho
+Defendant’s Citizenship: Ohio
+Originally filled in: Montana
+==============================
+Case ID: 133
+Cause of action: Battery
+Amount in Controversy: $80000.0
+Plaintiff’s Citizenship: Michigan
+Defendant’s Citizenship: Michigan
+Originally filled in: Wisconsin
+==============================
+Case ID: 138
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $175000.0
+Plaintiff’s Citizenship: Delaware
+Defendant’s Citizenship: Vermont
+Originally filled in: South Carolina
+==============================
+Case ID: 146
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $90000.0
+Plaintiff’s Citizenship: California
+Defendant’s Citizenship: North Carolina
+Originally filled in: Wisconsin
+==============================
+Case ID: 147
+Cause of action: Negligence
+Amount in Controversy: $105000.0
+Plaintiff’s Citizenship: New York
+Defendant’s Citizenship: New York
+Originally filled in: Missouri
+==============================
+Case ID: 148
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $55000.0
+Plaintiff’s Citizenship: South Dakota
+Defendant’s Citizenship: Wyoming
+Originally filled in: Missouri
+==============================
+Case ID: 153
+Cause of action: Battery
+Amount in Controversy: $200000.0
+Plaintiff’s Citizenship: Alaska
+Defendant’s Citizenship: Alaska
+Originally filled in: Tennessee
+==============================
+Case ID: 162
+Cause of action: Negligence
+Amount in Controversy: $155000.0
+Plaintiff’s Citizenship: Arkansas
+Defendant’s Citizenship: Arkansas
+Originally filled in: Alaska
+==============================
+Case ID: 164
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $95000.0
+Plaintiff’s Citizenship: Colorado
+Defendant’s Citizenship: Delaware
+Originally filled in: Indiana
+==============================
+Case ID: 169
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $175000.0
+Plaintiff’s Citizenship: New Hampshire
+Defendant’s Citizenship: Indiana
+Originally filled in: Nevada
+==============================
+Case ID: 178
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $85000.0
+Plaintiff’s Citizenship: Virginia
+Defendant’s Citizenship: Virginia
+Originally filled in: Vermont
+==============================
+Case ID: 181
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $175000.0
+Plaintiff’s Citizenship: Michigan
+Defendant’s Citizenship: New Mexico
+Originally filled in: Missouri
+==============================
+Case ID: 184
+Cause of action: Trespass to Chattel
+Amount in Controversy: $115000.0
+Plaintiff’s Citizenship: Alabama
+Defendant’s Citizenship: Alabama
+Originally filled in: Wisconsin
+==============================
+Case ID: 185
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $45000.0
+Plaintiff’s Citizenship: Delaware
+Defendant’s Citizenship: Delaware
+Originally filled in: Delaware
+==============================
+Case ID: 186
+Cause of action: Equal Protection Challenge
+Amount in Controversy: $120000.0
+Plaintiff’s Citizenship: Vermont
+Defendant’s Citizenship: Washington
+Originally filled in: Texas
+==============================
+Case ID: 191
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $130000.0
+Plaintiff’s Citizenship: Louisiana
+Defendant’s Citizenship: Kentucky
+Originally filled in: Kentucky
+==============================
+Case ID: 192
+Cause of action: Title IX Workplace Discrimination
+Amount in Controversy: $175000.0
+Plaintiff’s Citizenship: Alaska
+Defendant’s Citizenship: Alaska
+Originally filled in: Rhode Island
+==============================
+Case ID: 195
+Cause of action: Fair Labor Standard Act Claim
+Amount in Controversy: $65000.0
+Plaintiff’s Citizenship: Oregon
+Defendant’s Citizenship: Utah
+Originally filled in: Virginia
+==============================
+Case ID: 196
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $165000.0
+Plaintiff’s Citizenship: Florida
+Defendant’s Citizenship: Indiana
+Originally filled in: Indiana
+==============================
+Case ID: 199
+Cause of action: Prisoner Civil Rights Claim
+Amount in Controversy: $105000.0
+Plaintiff’s Citizenship: Wyoming
+Defendant’s Citizenship: New Jersey
+Originally filled in: Alaska
+==============================
+Case ID: 200
+Cause of action: Invasion of Privacy
+Amount in Controversy: $155000.0
+Plaintiff’s Citizenship: Rhode Island
+Defendant’s Citizenship: Rhode Island
+Originally filled in: Arizona
+==============================

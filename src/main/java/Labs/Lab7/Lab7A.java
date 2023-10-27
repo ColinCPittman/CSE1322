@@ -8,7 +8,7 @@ public class Lab7A {
         int menuChoice;
         do{
             System.out.println(mainMenu);
-            menuChoice = DataGrabber.promptUserForMenuChoice(fromOne, toThree, exit_value, "Enter choice: ");
+            menuChoice = DataGrabber.promptUserForMenuChoice(fromOne, toThree, exit_value, "Enter choice");
             switch (menuChoice) {
                 case multiply_two_numbers ->{
                     int firstNum = DataGrabber.promptUserForAnyInt("Enter first number");

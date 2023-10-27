@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="Lab7 and DNALib initial completion &#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab8/Lab8.java" afterDir="false" />
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="Lab8 inital completetion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/accepted.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complaints.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remanded.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment6/Complaint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment6/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment6/StateComplaintException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab9/Lab9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Labs/Lab9/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Labs/Lab9/file2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Labs/Lab7/Lab7A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab7/Lab7A.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +72,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/Documents/GitHub/KSU1322/src/main/java/Assignments/Assignment4&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -392,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697041070163</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Lab8 inital completetion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1697232414418</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1697232414418</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -408,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="made lab3 quiz answers case sensitive" />
     <MESSAGE value="readability changes for grader, ready to submit, no more time to improve this code. assignment 2 and lab3 submissions" />
     <MESSAGE value="readability changes for grader, ready to submit, no more time to improve this code. assignment 2 and lab3 submissions&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="try-catch fix in getnonnegative method" />
@@ -433,7 +448,8 @@
     <MESSAGE value="assignment 5, struggling with validator&#10;&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="Lab7 and DNALib WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="Lab7 and DNALib initial completion &#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab7 and DNALib initial completion &#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="Lab8 inital completetion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8 inital completetion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
