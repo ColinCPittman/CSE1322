@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="lab 10 completion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/TeaBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/TheDrum.java" afterDir="false" />
+    <list default="true" id="02effd79-30aa-4a74-833b-1fc3697f18a0" name="Changes" comment="assignment 7 WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab11/BlueRayCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab11/BlueRayDisk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Labs/Lab11/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/TheDrum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignments/Assignment7/TheDrum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698610320594</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="assignment 7 WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;">
+      <created>1698874978485</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698874978485</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +441,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="try-catch fix in getnonnegative method" />
     <MESSAGE value="lab 4 initial part coded, save for the driver class." />
     <MESSAGE value="lab 4 coded but untested" />
     <MESSAGE value="assignment 3 initially coded, relatively untested" />
@@ -457,7 +465,8 @@
     <MESSAGE value="Lab8 inital completetion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="Assignment 6 initial completion.&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
     <MESSAGE value="lab 10 completion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 10 completion&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <MESSAGE value="assignment 7 WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 7 WIP&#10;&#10;Signed-off-by: ColinCPittman &lt;colincpittman@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

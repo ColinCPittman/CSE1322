@@ -21,7 +21,7 @@ public class Employee extends Thread {
 
     @Override
     public String toString() {
-        return "Employee " + id + " has unloaded " + totalJasmine + " boxes of Jamine Tea, " + totalEarlGrey + " boxes of Earl Grey, and " + totalLemon + " boxes of Lemon Tea.";
+        return "Employee " + id + " has unloaded " + totalJasmine + " boxes of Jasmine Tea, " + totalEarlGrey + " boxes of Earl Grey, and " + totalLemon + " boxes of Lemon Tea.";
     }
 
     @Override
@@ -32,7 +32,7 @@ public class Employee extends Thread {
                 totalJasmine++;
             }else if(current.getTeaType().equals("Earl Grey")) {
                 totalEarlGrey++;
-            }else if (current.getNextTea().equals("Lemon")) {
+            }else if (current.getTeaType().equals("Lemon")) {
                 totalLemon++;
             }else {
             }

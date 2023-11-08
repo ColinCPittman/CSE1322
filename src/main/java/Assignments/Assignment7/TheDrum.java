@@ -3,7 +3,7 @@ package Assignments.Assignment7;
 public class TheDrum {
    private TeaBox nextTeaBox = null;
 
-    public TeaBox getNextTeaBox() {
+    public synchronized TeaBox getNextTeaBox() {
         TeaBox current = nextTeaBox;
         if(nextTeaBox != null) {
             nextTeaBox = nextTeaBox.getNextTea();
