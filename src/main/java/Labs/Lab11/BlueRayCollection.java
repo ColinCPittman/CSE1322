@@ -18,23 +18,29 @@ public class BlueRayCollection {
             nextNode = null;
         }
     }
+
     private Node head;
 
     public BlueRayCollection() {
         head = null;
     }
-    public void add(String title, String director, int releaseYear, double cost){
-        if(head == null) head = new Node(new BlueRayDisk(title, director, releaseYear, cost));
-        Node current = head;
-        while(current.nextNode != null) {
-            current = current.nextNode;
+
+    public void add(String title, String director, int releaseYear, double cost) {
+        if (head == null) head = new Node(new BlueRayDisk(title, director, releaseYear, cost));
+        else {
+            Node current = head;
+            while (current.nextNode != null) {
+                current = current.nextNode;
+            }
+            current.nextNode = new Node(new BlueRayDisk(title, director, releaseYear, cost));
         }
-        current.nextNode = new Node(new BlueRayDisk(title, director, releaseYear, cost));
     }
-    public void show_all(){
-        if(head == null) return;
+
+    public void show_all() {
+        if (head == null) return;
         Node current = head;
-        while(current.nextNode != null) {
+        System.out.println(current.disk);
+        while (current.nextNode != null) {
             current = current.nextNode;
             System.out.println(current.disk);
         }
